@@ -1,8 +1,9 @@
 body {
-    background-color: rosybrown;
+    background-color: #F9EAE1;
 }
+
 img {
-    border: 5px black solid;
+    border: 5px solid #1d3461;
     margin: 20px;
     width: 500px;
 }
@@ -13,4 +14,48 @@ iframe {
     height: 315px;
     width: 560px;
     /* border: purple 10px dotted; */
+}
+
+h1 {
+    text-align: center;
+    color: #1d3461;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 24px;
+
+
+}
+
+.pizzaImg>img:nth-child(odd) {
+    border-color: #AF3B6E;
+}
+.externalNav>div {
+    width: 200px;
+    height: 30px;
+    border: 3px #AF3B6E solid;
+    margin: 20px;
+}
+
+h3+p {
+    font-weight: bold;
+}
+
+a:link {
+    color: #AF3B6E;
+}
+
+a:visited {
+    color: #FF6347;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #607466;
+}
+
+a:active {
+    font-size: 40px;
 }
