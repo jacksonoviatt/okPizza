@@ -1,59 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: #F9EAE1;
+    background-color: #f9eae1;
 }
 
-img {
-    border: 5px solid #1d3461;
-    margin: 20px;
-    width: 500px;
+h3 + p {
+    font-weight: bold;
 }
 
 iframe {
     margin-left: 20%;
     margin-right: 20%;
-    height: 315px;
-    width: 560px;
+    height: auto;
+    width: 300px;
     /* border: purple 10px dotted; */
 }
 
 h1 {
-    text-align: center;
-    color: #1d3461;
+    color: #f9eae1;
+    font-size: 65px;
+    text-shadow: #ff6347 3px 2px 2px;
 }
 
+h2 {
+    color: #ff6347;
+    font-size: 45px;
+    text-shadow: #607466 3px 3px 3px;
+}
 nav a {
     text-decoration: none;
     margin-left: 30px;
     font-size: 24px;
-
-
 }
 
-.pizzaImg>img:nth-child(odd) {
-    border-color: #AF3B6E;
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    background-color: #607466;
+    padding: 10px 0px 20px 50px;
 }
-.externalNav>div {
+
+#logo {
+    border-radius: 80px;
+    width: 150px;
+    justify-self: center;
+}
+
+.title {
+    justify-self: right;
+    align-self: center;
+}
+
+nav {
+    align-self: end;
+    justify-self: center;
+}
+
+.externalNav > div {
     width: 200px;
     height: 30px;
-    border: 3px #AF3B6E solid;
+    border: 3px #af3b6e solid;
     margin: 20px;
 }
 
-h3+p {
-    font-weight: bold;
+.pizzaImg {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    max-width: 1200px;
+    
+}
+
+.pizzaImg img {
+    border: 5px solid #1d3461;
+    margin: 20px;
+    /* width: 300px; */
+}
+
+.textBox {
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+    border: #af3b6e solid 5px;
+    height: 200px;
+}
+
+#chefHands {
+    width: 560px;
+    align-self: center;
+    height: 200px;
+}
+
+#gourmetPizza {
+    height: 315px;
+    align-self: center;
+}
+
+
+iframe {
+    height: 315px;
+    width: 560px;
+    margin-left: 15px;
+    align-self: center;
+    border: #af3b6e solid 5px;
+  
 }
 
 a:link {
-    color: #AF3B6E;
+    color: #af3b6e;
 }
 
 a:visited {
-    color: #FF6347;
+    color: #ff6347;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #607466;
+    color: #1d3461;
 }
 
 a:active {
