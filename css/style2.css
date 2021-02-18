@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9eae1;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #f9eae1;
+    font-size: 2em;
+    text-shadow: #ff6347 3px 2px 2px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff6347;
+    font-size: 2rem;
+    text-shadow: #607466 3px 3px 3px;
+}
+
+header {
+    background-color: #607466;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+}
+
+#logo {
+    border-radius: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+#navMenuDesktop {
+    display: none;
+}
+
+nav > div {
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#navMenu {
+    height: 400px;
+    width: 150px;
+    background-color: #ff6347;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    transition: ease-in-out 0.5s all;
+}
+
+#navMenu a {
+    color: black;
+}
+
+nav:hover #navMenu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.externalNav {
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.pizzaImg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+.textBox {
+    border: 3px #ff6347 solid;
+    padding: 10px;
+    margin: 10px;
+}
+.pizzaImg img {
+    margin: 10px;
+    width: 80%;
+}
+
+article {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+@media screen and (min-width: 350px) {
+    #navMenu {
+        height: 600px;
+        width: 250px;
+        right: -250px;
+    }
+
+    header {
+        height: 120px;
+    }
+
+    #logo {
+        width: 100px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        height: 170px;
+    }
+
+    #logo {
+        width: 140px;
+        margin-left: 80px;
+        
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #navMenuDesktop {
+        display: inline;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        width: 350px;
+    }
+
+    #navMenuDesktop a {
+        font-size: 20px;
+        color: #ff6347;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .pizzaImg {
+        max-width: 800px;
+        
+    }
+}

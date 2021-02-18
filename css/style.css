@@ -80,14 +80,13 @@ nav {
 
 .pizzaImg {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: 2fr 3fr; */
     max-width: 1200px;
-    
+    place-items: center;
 }
 
 .pizzaImg img {
-    border: 5px solid #;
     margin: 20px;
     /* width: 300px; */
 }
@@ -98,13 +97,13 @@ nav {
     padding: 20px;
     margin: 20px 20px 0px 20px;
     border: #af3b6e solid 5px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 #chefHands {
-    width: 560px;
+    width: 300px;
     align-self: center;
-    height: 200px;
+    /* height: 200px; */
 }
 
 #gourmetPizza {
