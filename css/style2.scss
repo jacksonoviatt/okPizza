@@ -1,0 +1,131 @@
+$red: #ff6347;
+$green: #607466;
+$light: #f9eae1;
+
+@mixin centerGrid() {
+    display: grid;
+    place-items: center;
+}
+
+@import '_header.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    color: $light;
+    font-size: 2em;
+    text-shadow: $red 3px 2px 2px;
+    text-align: center;
+}
+
+h2 {
+    color: $red;
+    font-size: 2rem;
+    text-shadow: $green 3px 3px 3px;
+}
+
+
+.externalNav {
+    margin: 20px;
+    @include centerGrid();    
+    a {
+        color: black;
+    }
+}
+
+.pizzaImg {
+    @include centerGrid();
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+
+    img {
+        margin: 10px;
+        width: 80%;
+    }
+    .textBox {
+    border: 3px $red solid;
+    padding: 10px;
+    margin: 10px;
+}
+}
+
+article {
+    @include centerGrid();
+    margin: 20px;
+    h3 {
+        font-size: 30px;
+        text-shadow: #ff6347 3px 3px 4px;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    #navMenu {
+        height: 600px;
+        width: 250px;
+        right: -250px;
+    }
+
+    header {
+        height: 120px;
+    }
+
+    #logo {
+        width: 100px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        height: 170px;
+    }
+
+    #logo {
+        width: 140px;
+        margin-left: 80px;
+        
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #navMenuDesktop {
+        display: inline;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        width: 350px;
+
+        a {
+            font-size: 20px;
+            color: $red;
+            text-decoration: none;
+            margin: 10px;
+        }
+    }
+
+    .centered {
+        @include centerGrid();
+    }
+    .pizzaImg {
+        max-width: 800px;
+        
+        
+    }
+}

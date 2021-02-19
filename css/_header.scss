@@ -1,0 +1,48 @@
+header {
+    background-color: $green;
+    height: 100px;
+    @include centerGrid();
+    grid-template-columns: 1fr 2fr 1fr;
+        
+ }   
+#logo {
+    border-radius: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+    
+
+#navMenuDesktop {
+    display: none;
+}
+
+
+nav { 
+    div {
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+}
+
+#navMenu {
+    height: 400px;
+    width: 150px;
+    background-color: $red;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    @include centerGrid();
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    transition: ease-in-out 0.5s all;
+}
+
+nav:hover #navMenu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
